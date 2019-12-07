@@ -1,6 +1,5 @@
 package com.chenfeng.designtwo.creational_pattern.builder;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
 /**
  * @Classname Client
@@ -13,7 +12,7 @@ public class Client {
         CarBuilder carBuilder = new FordCarBuilder();
         CarDirector carDirector = new CarDirector(carBuilder);
         Car car = carDirector.productCar();
-        System.out.println(car.toString()     );
+        System.out.println(car.toString());
     }
 
 
